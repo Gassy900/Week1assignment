@@ -12,6 +12,7 @@ public class barchart3 {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
+        Pen p = new StandardPen(new SketchPadWindow(800,600));
         int x1, x2, x3, x4;
         System.out.println("Enter bar 1 value: ");
         x1 = s.nextInt();
@@ -21,6 +22,8 @@ public class barchart3 {
         x3 = s.nextInt();
         System.out.println("Enter bar 4 value: ");
         x4 = s.nextInt();
+        
+        makebar(p, pb, -350, 200, x1.width, Color.blue);
         
 
     }

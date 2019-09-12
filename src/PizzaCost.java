@@ -10,7 +10,7 @@ public class PizzaCost {
         size = scan.nextDouble();
         System.out.print("How many toppings you want: ");
         top = scan.nextInt();
-        topfin = top * .75;
+        topfin = (double)top * .75;
         sizefin = size * .5;
         price = topfin + sizefin + 1.50 + .75;
         System.out.format("The final price fo your pizza is $%.2f\n",price);

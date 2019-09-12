@@ -3,7 +3,7 @@ import TurtleGraphics.SketchPadWindow;
 import TurtleGraphics.StandardPen;
 import java.awt.Color;
 public class Penbar {
-    int x,y,w;
+    int x,y,width;
     Color barColor;
     
 
@@ -15,6 +15,12 @@ p.move(x,y);
 p.setWidth(50);
 p.down();
 p.setDirection(0);
-p.move
+p.move(width);
+p.up();
+p.move(35);
+p.down();
+p.drawString("Value: " + width);
+
+
 }
 }
